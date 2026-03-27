@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Lenis Recommended CSS for Smooth Scrolling */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+@layer base {
+  body {
+    @apply m-0 min-h-screen bg-[#050505] text-white overflow-x-hidden select-none;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+/* trigger HMR */
+  /* Global Input Focus Styles */
+  input:focus, textarea:focus, select:focus {
+    @apply outline-none border-[#ef4444] ring-1 ring-[#ef4444]/50 shadow-[0_0_15px_rgba(239,68,68,0.3)] transition-all duration-200;
+  }
+  /* Global Select Option Styles */
+  option {
+    @apply bg-[#0a0a0a] text-white font-bold p-3;
+  }
+
+  /* Custom Scrollbar - Global */
+  ::-webkit-scrollbar {
+    @apply w-[5px] h-[5px];
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-[#050505];
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#333] rounded-xl;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-[#ef4444];
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Montserrat', sans-serif;
+  }
+}

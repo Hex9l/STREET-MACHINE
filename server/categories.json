@@ -1,0 +1,605 @@
+{
+    "value":  [
+                  {
+                      "_id":  "6992a8a62627f7f346e62413",
+                      "name":  "Convertible",
+                      "description":  "Car with removable or folding roof.",
+                      "type":  "car",
+                      "engineRange":  "2.0L - 5.0L",
+                      "bestFor":  "Open-air driving experience",
+                      "topSpeed":  "200 - 280 km/h",
+                      "pros":  [
+                                   "Unique driving experience",
+                                   "Stylish appearance",
+                                   "Fun to drive"
+                               ],
+                      "cons":  [
+                                   "Expensive",
+                                   "Less structural rigidity",
+                                   "Limited practicality",
+                                   "Not suitable for extreme weather"
+                               ],
+                      "seating":  "2 - 4",
+                      "createdAt":  "2026-02-16T05:18:30.395Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e62416",
+                      "name":  "Sports Car",
+                      "description":  "Performance-focused car built for speed.",
+                      "type":  "car",
+                      "engineRange":  "3.0L - 6.0L",
+                      "bestFor":  "Enthusiasts and performance driving",
+                      "topSpeed":  "250 - 320+ km/h",
+                      "pros":  [
+                                   "High speed and acceleration",
+                                   "Aerodynamic design",
+                                   "Exciting driving experience"
+                               ],
+                      "cons":  [
+                                   "Expensive",
+                                   "Low ground clearance",
+                                   "Limited practicality"
+                               ],
+                      "seating":  "2 - 4",
+                      "createdAt":  "2026-02-16T05:18:30.395Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e62421",
+                      "name":  "Dirt Bike",
+                      "description":  "Off-Road Focused. Lightweight bikes for off-road riding.",
+                      "type":  "bike",
+                      "engineRange":  "100 - 450cc",
+                      "bestFor":  "Trails, motocross",
+                      "topSpeed":  "80 - 120 km/h",
+                      "pros":  [
+                                   "Light",
+                                   "Strong suspension"
+                               ],
+                      "cons":  [
+                                   "Not street legal",
+                                   "High maintenance"
+                               ],
+                      "seating":  "1",
+                      "createdAt":  "2026-02-16T05:18:30.397Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e62424",
+                      "name":  "Scrambler",
+                      "description":  "Retro Off-Road. Retro bikes with off-road capability.",
+                      "type":  "bike",
+                      "engineRange":  "250 - 1200cc",
+                      "bestFor":  "Light off-road and city riding",
+                      "topSpeed":  "130 - 190 km/h",
+                      "pros":  [
+                                   "Stylish",
+                                   "Versatile"
+                               ],
+                      "cons":  [
+                                   "No wind protection",
+                                   "Pricey"
+                               ],
+                      "seating":  "2",
+                      "createdAt":  "2026-02-16T05:18:30.397Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e6240f",
+                      "name":  "Sedan",
+                      "description":  "Three-box car with separate trunk.",
+                      "type":  "car",
+                      "engineRange":  "1.5L - 4.0L",
+                      "bestFor":  "Family comfort and highway driving",
+                      "topSpeed":  "180 - 250 km/h",
+                      "pros":  [
+                                   "Comfortable ride",
+                                   "Large boot space",
+                                   "Stable at high speeds",
+                                   "Premium look"
+                               ],
+                      "cons":  [
+                                   "Lower ground clearance",
+                                   "Not ideal for rough roads",
+                                   "Larger turning radius than hatchbacks"
+                               ],
+                      "seating":  "4 - 5",
+                      "createdAt":  "2026-02-16T05:18:30.394Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e62410",
+                      "name":  "SUV",
+                      "description":  "Large vehicle with high ground clearance.",
+                      "type":  "car",
+                      "engineRange":  "2.0L - 5.0L",
+                      "bestFor":  "Rough roads and long trips",
+                      "topSpeed":  "180 - 220 km/h",
+                      "pros":  [
+                                   "High ground clearance",
+                                   "Spacious interior",
+                                   "Strong road presence",
+                                   "Suitable for all terrains"
+                               ],
+                      "cons":  [
+                                   "Higher fuel consumption",
+                                   "Expensive compared to sedans",
+                                   "Difficult to park in tight spaces"
+                               ],
+                      "seating":  "5 - 7",
+                      "createdAt":  "2026-02-16T05:18:30.394Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e62412",
+                      "name":  "Coupe",
+                      "description":  "Two-door sporty car.",
+                      "type":  "car",
+                      "engineRange":  "2.0L - 5.0L",
+                      "bestFor":  "Style and performance",
+                      "topSpeed":  "220 - 300 km/h",
+                      "pros":  [
+                                   "Stylish design",
+                                   "Sporty performance",
+                                   "Premium feel"
+                               ],
+                      "cons":  [
+                                   "Limited rear-seat space",
+                                   "Expensive",
+                                   "Not practical for families"
+                               ],
+                      "seating":  "2 - 4",
+                      "createdAt":  "2026-02-16T05:18:30.394Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e62420",
+                      "name":  "Adventure (ADV)",
+                      "description":  "All Terrain. Designed for both road and off-road riding.",
+                      "type":  "bike",
+                      "engineRange":  "250 - 1300cc",
+                      "bestFor":  "Adventure trips, rough terrain",
+                      "topSpeed":  "140 - 200 km/h",
+                      "pros":  [
+                                   "High ground clearance",
+                                   "Versatile"
+                               ],
+                      "cons":  [
+                                   "Tall seat height",
+                                   "Heavy"
+                               ],
+                      "seating":  "2",
+                      "createdAt":  "2026-02-16T05:18:30.397Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e62418",
+                      "name":  "Electric Car",
+                      "description":  "Fully electric-powered vehicle.",
+                      "type":  "car",
+                      "engineRange":  "Electric Motor",
+                      "bestFor":  "Eco-friendly commuting",
+                      "topSpeed":  "150 - 250+ km/h",
+                      "pros":  [
+                                   "Zero emissions",
+                                   "Low running cost",
+                                   "Quiet operation"
+                               ],
+                      "cons":  [
+                                   "Charging infrastructure required",
+                                   "Higher initial cost",
+                                   "Limited range in some models"
+                               ],
+                      "seating":  "4 - 5",
+                      "createdAt":  "2026-02-16T05:18:30.396Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e6241d",
+                      "name":  "Naked / Street",
+                      "description":  "Sporty & Comfortable. Sporty bikes without full body fairing.",
+                      "type":  "bike",
+                      "engineRange":  "150 - 900cc",
+                      "bestFor":  "City and highway riding",
+                      "topSpeed":  "130 - 220 km/h",
+                      "pros":  [
+                                   "Comfortable",
+                                   "Powerful",
+                                   "Stylish"
+                               ],
+                      "cons":  [
+                                   "Wind blast",
+                                   "Minimal protection"
+                               ],
+                      "seating":  "2",
+                      "createdAt":  "2026-02-16T05:18:30.396Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e62423",
+                      "name":  "Cafe Racer",
+                      "description":  "Retro Style. Retro-styled sporty motorcycles.",
+                      "type":  "bike",
+                      "engineRange":  "250 - 900cc",
+                      "bestFor":  "Style and short rides",
+                      "topSpeed":  "130 - 180 km/h",
+                      "pros":  [
+                                   "Classic look",
+                                   "Lightweight"
+                               ],
+                      "cons":  [
+                                   "Aggressive posture",
+                                   "Minimal comfort"
+                               ],
+                      "seating":  "1 - 2",
+                      "createdAt":  "2026-02-16T05:18:30.397Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e62415",
+                      "name":  "Station Wagon",
+                      "description":  "Sedan-based car with extended rear cargo area.",
+                      "type":  "car",
+                      "engineRange":  "1.5L - 3.0L",
+                      "bestFor":  "Long-distance travel and cargo",
+                      "topSpeed":  "180 - 240 km/h",
+                      "pros":  [
+                                   "Large storage space",
+                                   "Comfortable ride",
+                                   "Better fuel efficiency than SUVs"
+                               ],
+                      "cons":  [
+                                   "Less popular in many markets",
+                                   "Not as high ground clearance as SUVs"
+                               ],
+                      "seating":  "5",
+                      "createdAt":  "2026-02-16T05:18:30.395Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e6241c",
+                      "name":  "Superbike",
+                      "description":  "High-performance sport motorcycle built for extreme speed and racing technology.",
+                      "type":  "bike",
+                      "engineRange":  "600 - 1000cc+",
+                      "bestFor":  "Track riding and high-speed performance",
+                      "topSpeed":  "250 - 320+ km/h",
+                      "pros":  [
+                                   "Extreme speed",
+                                   "Advanced electronics",
+                                   "Premium design"
+                               ],
+                      "cons":  [
+                                   "Expensive",
+                                   "Aggressive riding posture",
+                                   "High maintenance"
+                               ],
+                      "seating":  "1 - 2",
+                      "createdAt":  "2026-02-16T05:18:30.396Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e62422",
+                      "name":  "Dual-Sport",
+                      "description":  "Street Legal Off-Road. Street-legal bikes that can go off-road.",
+                      "type":  "bike",
+                      "engineRange":  "200 - 650cc",
+                      "bestFor":  "Mixed terrain",
+                      "topSpeed":  "110 - 150 km/h",
+                      "pros":  [
+                                   "Versatile",
+                                   "Durable"
+                               ],
+                      "cons":  [
+                                   "Vibration",
+                                   "Small fuel tank"
+                               ],
+                      "seating":  "2",
+                      "createdAt":  "2026-02-16T05:18:30.397Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e6241e",
+                      "name":  "Cruiser",
+                      "description":  "Relaxed Riding. Low-slung bikes designed for relaxed riding.",
+                      "type":  "bike",
+                      "engineRange":  "250 - 1800cc",
+                      "bestFor":  "Long-distance cruising",
+                      "topSpeed":  "120 - 180 km/h",
+                      "pros":  [
+                                   "Comfortable seating",
+                                   "Smooth ride"
+                               ],
+                      "cons":  [
+                                   "Heavy",
+                                   "Low ground clearance"
+                               ],
+                      "seating":  "2",
+                      "createdAt":  "2026-02-16T05:18:30.396Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e6241b",
+                      "name":  "Sport Bike",
+                      "description":  "High Performance. High-performance motorcycles built for speed.",
+                      "type":  "bike",
+                      "engineRange":  "150 - 300cc",
+                      "bestFor":  "Racing and performance riding",
+                      "topSpeed":  "150 - 200 km/h",
+                      "pros":  [
+                                   "Fast acceleration",
+                                   "Aerodynamic design"
+                               ],
+                      "cons":  [
+                                   "Aggressive posture",
+                                   "Less comfortable"
+                               ],
+                      "seating":  "2",
+                      "createdAt":  "2026-02-16T05:18:30.396Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e6240e",
+                      "name":  "Hatchback",
+                      "description":  "Compact car with rear hatch door.",
+                      "type":  "car",
+                      "engineRange":  "1.0L - 2.0L",
+                      "bestFor":  "City driving and small families",
+                      "topSpeed":  "150 - 200 km/h",
+                      "pros":  [
+                                   "Fuel efficient",
+                                   "Easy to park",
+                                   "Affordable",
+                                   "Low maintenance"
+                               ],
+                      "cons":  [
+                                   "Limited boot space",
+                                   "Not ideal for long highway trips",
+                                   "Less premium feel"
+                               ],
+                      "seating":  "4 - 5",
+                      "createdAt":  "2026-02-16T05:18:30.393Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e62411",
+                      "name":  "MPV",
+                      "description":  "Family-focused vehicle with multiple seats.",
+                      "type":  "car",
+                      "engineRange":  "1.5L - 3.5L",
+                      "bestFor":  "Large families and group travel",
+                      "topSpeed":  "160 - 200 km/h",
+                      "pros":  [
+                                   "Very spacious",
+                                   "Comfortable for long trips",
+                                   "Flexible seating"
+                               ],
+                      "cons":  [
+                                   "Bulky size",
+                                   "Less sporty design",
+                                   "Lower fuel efficiency"
+                               ],
+                      "seating":  "6 - 8",
+                      "createdAt":  "2026-02-16T05:18:30.394Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e62414",
+                      "name":  "Pickup Truck",
+                      "description":  "Vehicle with open cargo bed.",
+                      "type":  "car",
+                      "engineRange":  "2.5L - 6.0L",
+                      "bestFor":  "Carrying goods and off-road use",
+                      "topSpeed":  "160 - 200 km/h",
+                      "pros":  [
+                                   "Strong and durable",
+                                   "Large cargo capacity",
+                                   "Good off-road capability"
+                               ],
+                      "cons":  [
+                                   "Large size",
+                                   "Higher fuel consumption",
+                                   "Harder to maneuver in cities"
+                               ],
+                      "seating":  "2 - 5",
+                      "createdAt":  "2026-02-16T05:18:30.395Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e62419",
+                      "name":  "Hybrid Car",
+                      "description":  "Uses both fuel engine and electric motor.",
+                      "type":  "car",
+                      "engineRange":  "1.5L - 3.0L + Electric",
+                      "bestFor":  "Fuel-efficient driving",
+                      "topSpeed":  "160 - 220 km/h",
+                      "pros":  [
+                                   "Better fuel economy",
+                                   "Lower emissions",
+                                   "Smooth driving experience"
+                               ],
+                      "cons":  [
+                                   "Higher purchase cost",
+                                   "Complex system",
+                                   "Battery replacement cost"
+                               ],
+                      "seating":  "4 - 5",
+                      "createdAt":  "2026-02-16T05:18:30.396Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e62417",
+                      "name":  "Supercar",
+                      "description":  "Extreme high-performance exotic cars.",
+                      "type":  "car",
+                      "engineRange":  "4.0L - 8.0L",
+                      "bestFor":  "Collectors and high-speed performance",
+                      "topSpeed":  "300 - 400+ km/h",
+                      "pros":  [
+                                   "Extreme speed",
+                                   "Advanced technology",
+                                   "Exclusive and rare"
+                               ],
+                      "cons":  [
+                                   "Very expensive",
+                                   "High maintenance cost",
+                                   "Not practical for daily use"
+                               ],
+                      "seating":  "2",
+                      "createdAt":  "2026-02-16T05:18:30.396Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e6241a",
+                      "name":  "Commuter",
+                      "description":  "Basic Daily Use. Basic, fuel-efficient motorcycles for daily use.",
+                      "type":  "bike",
+                      "engineRange":  "100 - 150cc",
+                      "bestFor":  "City commuting",
+                      "topSpeed":  "80 - 100 km/h",
+                      "pros":  [
+                                   "Low cost",
+                                   "High mileage",
+                                   "Easy maintenance"
+                               ],
+                      "cons":  [
+                                   "Low power",
+                                   "Basic features"
+                               ],
+                      "seating":  "2",
+                      "createdAt":  "2026-02-16T05:18:30.396Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e62425",
+                      "name":  "Electric Bike",
+                      "description":  "Eco-Friendly. Runs on electric power.",
+                      "type":  "bike",
+                      "engineRange":  "Electric",
+                      "bestFor":  "Eco-friendly commuting",
+                      "topSpeed":  "80 - 150 km/h",
+                      "pros":  [
+                                   "No fuel",
+                                   "Silent",
+                                   "Low maintenance"
+                               ],
+                      "cons":  [
+                                   "Range anxiety",
+                                   "Charging time"
+                               ],
+                      "seating":  "2",
+                      "createdAt":  "2026-02-16T05:18:30.397Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e6241f",
+                      "name":  "Touring",
+                      "description":  "Long Distance. Built for long-distance travel.",
+                      "type":  "bike",
+                      "engineRange":  "500 - 1800cc",
+                      "bestFor":  "Highway touring",
+                      "topSpeed":  "160 - 220 km/h",
+                      "pros":  [
+                                   "Comfortable",
+                                   "Luggage capacity"
+                               ],
+                      "cons":  [
+                                   "Heavy",
+                                   "Expensive"
+                               ],
+                      "seating":  "2",
+                      "createdAt":  "2026-02-16T05:18:30.397Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "6992a8a62627f7f346e62426",
+                      "name":  "Scooter",
+                      "description":  "City Ease. Step-through frame with automatic transmission.",
+                      "type":  "bike",
+                      "engineRange":  "90 - 160cc",
+                      "bestFor":  "Easy city commuting",
+                      "topSpeed":  "80 - 110 km/h",
+                      "pros":  [
+                                   "Easy to ride",
+                                   "Storage space"
+                               ],
+                      "cons":  [
+                                   "Small wheels",
+                                   "Not for highway"
+                               ],
+                      "seating":  "2",
+                      "createdAt":  "2026-02-16T05:18:30.397Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "69a17e9f5ec974b8b965d7c4",
+                      "name":  "Hypercar",
+                      "description":  "Ultra-high-performance cars, representing the pinnacle of automotive engineering, beyond supercars.",
+                      "type":  "car",
+                      "engineRange":  "4.0L V8 - 8.0L W16 + Electric",
+                      "bestFor":  "Collectors, track dominance, ultimate performance",
+                      "topSpeed":  "350 - 450+ km/h",
+                      "pros":  [
+                                   "Pinnacle of performance",
+                                   "Exclusivity",
+                                   "Cutting-edge technology"
+                               ],
+                      "cons":  [
+                                   "Astronomical price",
+                                   "Extremely limited practicality",
+                                   "High maintenance"
+                               ],
+                      "seating":  "2",
+                      "createdAt":  "2026-02-27T11:23:11.414Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "69a9ac1659f14356ebc169c4",
+                      "name":  "Muscle Car",
+                      "description":  "High-performance American coupes with powerful V8 engines.",
+                      "type":  "car",
+                      "engineRange":  "5.0L - 6.2L V8",
+                      "bestFor":  "Straight-line speed and classic enthusiasts",
+                      "topSpeed":  "250 - 320 km/h",
+                      "pros":  [
+                                   "V8 sound",
+                                   "High horsepower",
+                                   "Iconic styling",
+                                   "Strong acceleration"
+                               ],
+                      "cons":  [
+                                   "Poor fuel economy",
+                                   "Heavy weight",
+                                   "Less agile in corners"
+                               ],
+                      "seating":  "2 - 4",
+                      "createdAt":  "2026-03-05T16:15:18.474Z",
+                      "__v":  0
+                  },
+                  {
+                      "_id":  "69be949a05c674684479a418",
+                      "name":  "Roadster",
+                      "description":  "Modern Naked Performance. High-performance naked motorcycles with a focus on agility, minimalist design, and punchy power delivery.",
+                      "type":  "bike",
+                      "engineRange":  "600 - 1200cc+",
+                      "bestFor":  "Enthusiasts, city riding, and performance naked bike fans",
+                      "topSpeed":  "180 - 240 km/h",
+                      "pros":  [
+                                   "Agile handling",
+                                   "Powerful engine",
+                                   "Minimalist aesthetic",
+                                   "Versatile"
+                               ],
+                      "cons":  [
+                                   "No wind protection",
+                                   "Exposed components",
+                                   "Limited luggage space"
+                               ],
+                      "seating":  "2",
+                      "createdAt":  "2026-03-21T12:52:42.643Z",
+                      "__v":  0
+                  }
+              ],
+    "Count":  28
+}
