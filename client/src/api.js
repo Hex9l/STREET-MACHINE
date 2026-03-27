@@ -1,4 +1,5 @@
-export const API_URL =
-    import.meta.env.MODE === "development"
-        ? "http://localhost:5000"
-        : "https://street-machine.onrender.com";
+/**
+ * Core API Configuration
+ * Directs all frontend requests directly to the production backend
+ */
+export const API_URL = "https://street-machine.onrender.com";
