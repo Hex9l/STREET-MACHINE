@@ -1,3 +1,4 @@
+import { API_URL } from '../api.js';
 import { useState, useEffect, useRef, useCallback } from 'react';
 import useSWR from 'swr';
 const fetcher = url => fetch(url).then(res => res.json());
@@ -49,8 +50,8 @@ const Vehicles = ({ type = 'all' }) => {
     const itemsPerPage = 15;
 
     // SWR Data Fetching
-    const { data: vehiclesData, error: vError } = useSWR(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/vehicles`, fetcher, { revalidateOnFocus: false });
-    const { data: categoriesData, error: cError } = useSWR(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/categories`, fetcher, { revalidateOnFocus: false });
+    const { data: vehiclesData, error: vError } = useSWR(`${API_URL}/api/vehicles`, fetcher, { revalidateOnFocus: false });
+    const { data: categoriesData, error: cError } = useSWR(`${API_URL}/api/categories`, fetcher, { revalidateOnFocus: false });
 
     useEffect(() => {
         if (vehiclesData && categoriesData) {

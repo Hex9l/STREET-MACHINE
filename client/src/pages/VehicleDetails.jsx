@@ -1,3 +1,4 @@
+import { API_URL } from '../api.js';
 import { useState, useEffect, useRef } from 'react';
 import useSWR from 'swr';
 const fetcher = url => fetch(url).then(res => res.json());
@@ -119,7 +120,7 @@ const VehicleDetails = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const { data: swrVehicle, error: swrError } = useSWR(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/vehicles/${id}`, fetcher, { revalidateOnFocus: false });
+    const { data: swrVehicle, error: swrError } = useSWR(`${API_URL}/api/vehicles/${id}`, fetcher, { revalidateOnFocus: false });
 
     useEffect(() => {
         if (swrVehicle) {
@@ -181,7 +182,7 @@ const VehicleDetails = () => {
     // Data Safes
     const getImageUrl = (imagePath, width = 1920) => {
         if (!imagePath) return 'https://via.placeholder.com/1920x1080/111111/444444?text=Machine';
-        if (imagePath.startsWith('/uploads')) return `${import.meta.env.VITE_API_URL || 'http://localhost:5000'}${imagePath}`;
+        if (imagePath.startsWith('/uploads')) return `${API_URL}${imagePath}`;
         if (imagePath.includes('cloudinary.com') && imagePath.includes('/upload/')) {
             if (imagePath.match(/\/upload\/(q_|f_|w_|c_)/)) return imagePath;
             return imagePath.replace('/upload/', `/upload/f_auto,q_auto,w_${width}/`);

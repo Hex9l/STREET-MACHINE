@@ -1,3 +1,4 @@
+import { API_URL } from '../api.js';
 import { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import Button from './ui/Button';
@@ -14,7 +15,7 @@ const ReviewSection = ({ vehicleId }) => {
     useEffect(() => {
         const fetchReviews = async () => {
             try {
-                const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/reviews/${vehicleId}`);
+                const res = await fetch(`${API_URL}/api/reviews/${vehicleId}`);
                 const data = await res.json();
                 setReviews(data);
             } catch (error) {
@@ -33,7 +34,7 @@ const ReviewSection = ({ vehicleId }) => {
                 toast.error('Session expired. Please log in.');
                 return;
             }
-            const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/reviews`, {
+            const res = await fetch(`${API_URL}/api/reviews`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

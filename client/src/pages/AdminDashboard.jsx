@@ -1,3 +1,4 @@
+import { API_URL } from '../api.js';
 import { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { Link, useNavigate } from 'react-router-dom';
@@ -36,7 +37,7 @@ const AdminDashboard = () => {
 
     const fetchVehicles = async () => {
         try {
-            const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/vehicles`);
+            const res = await fetch(`${API_URL}/api/vehicles`);
             const data = await res.json();
             setVehicles(data);
             setLoading(false);
@@ -48,7 +49,7 @@ const AdminDashboard = () => {
 
     const fetchCategories = async () => {
         try {
-            const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/categories`);
+            const res = await fetch(`${API_URL}/api/categories`);
             const data = await res.json();
             setCategories(data);
         } catch (error) {
@@ -64,7 +65,7 @@ const AdminDashboard = () => {
         if (!window.confirm('Are you sure you want to delete this vehicle?')) return;
         const loadingToast = toast.loading('Deleting Asset...');
         try {
-            const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/vehicles/${id}`, {
+            const res = await fetch(`${API_URL}/api/vehicles/${id}`, {
                 method: 'DELETE',
                 headers: { 'Authorization': `Bearer ${user.token}` }
             });
@@ -88,7 +89,7 @@ const AdminDashboard = () => {
         if (!window.confirm('Are you sure you want to delete this category?')) return;
         const loadingToast = toast.loading('Deleting Category...');
         try {
-            const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/categories/${id}`, {
+            const res = await fetch(`${API_URL}/api/categories/${id}`, {
                 method: 'DELETE',
                 headers: { 'Authorization': `Bearer ${user.token}` }
             });
@@ -114,8 +115,8 @@ const AdminDashboard = () => {
         const loadingToast = toast.loading(editingVehicle ? 'Updating Asset...' : 'Deploying Asset...');
         try {
             const url = editingVehicle
-                ? `${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/vehicles/${editingVehicle._id}`
-                : `${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/vehicles`;
+                ? `${API_URL}/api/vehicles/${editingVehicle._id}`
+                : `${API_URL}/api/vehicles`;
 
             const method = editingVehicle ? 'PUT' : 'POST';
 
@@ -188,7 +189,7 @@ const AdminDashboard = () => {
         }
         const loadingToast = toast.loading('Creating Category...');
         try {
-            const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/categories`, {
+            const res = await fetch(`${API_URL}/api/categories`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

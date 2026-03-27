@@ -1,3 +1,4 @@
+import { API_URL } from '../api.js';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { preload } from 'swr';
@@ -7,7 +8,7 @@ const fetcher = url => fetch(url).then(res => res.json());
 
 export const optimizeImageUrl = (url, width = 800) => {
   if (!url) return 'https://via.placeholder.com/600x400/111111/444444?text=Machine';
-  if (url.startsWith('/uploads')) return `${import.meta.env.VITE_API_URL || 'http://localhost:5000'}${url}`;
+  if (url.startsWith('/uploads')) return `${API_URL}${url}`;
   
   if (url.includes('cloudinary.com') && url.includes('/upload/')) {
     // If it already contains optimization flags, skip
@@ -20,7 +21,7 @@ export const optimizeImageUrl = (url, width = 800) => {
 const VehicleCard = ({ vehicle }) => {
   return (
     <motion.div
-      onMouseEnter={() => preload(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/vehicles/${vehicle._id}`, fetcher)}
+      onMouseEnter={() => preload(`${API_URL}/api/vehicles/${vehicle._id}`, fetcher)}
       whileHover={{ y: -5, scale: 1.01 }}
       transition={{ duration: 0.25, ease: 'easeOut' }}
       className="group relative bg-[#0a0a0a] border border-white/10 overflow-hidden shadow-2xl hover:shadow-[#ef4444]/20 cursor-pointer rounded-xl transition-all duration-200"

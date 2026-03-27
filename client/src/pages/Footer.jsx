@@ -1,3 +1,4 @@
+import { API_URL } from '../api.js';
 import React, { useState } from 'react';
 import Hero from '../components/Hero';
 import EngineLayouts from '../components/EngineLayouts';
@@ -26,7 +27,7 @@ const handleSubmit = async (e) => {
   setSuccess('');
 
   try {
-    const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/contact`, {
+    const response = await fetch(`${API_URL}/api/contact`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -1,3 +1,4 @@
+import { API_URL } from '../api.js';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -14,7 +15,7 @@ const Gallery = () => {
     useEffect(() => {
         const fetchImages = async () => {
             try {
-                const response = await axios.get(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/gallery`);
+                const response = await axios.get(`${API_URL}/api/gallery`);
                 setImages(response.data);
                 setLoading(false);
             } catch (err) {

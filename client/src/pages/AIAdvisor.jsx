@@ -1,3 +1,4 @@
+import { API_URL } from '../api.js';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Button from '../components/ui/Button';
@@ -18,7 +19,7 @@ const AIAdvisor = () => {
         setResult(null);
 
         try {
-            const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/ai/recommend`, {
+            const res = await fetch(`${API_URL}/api/ai/recommend`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ query }),
