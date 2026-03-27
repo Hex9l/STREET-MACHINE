@@ -88,6 +88,14 @@ const engineData = [
 const EngineLayouts = () => {
   const [activeLayout, setActiveLayout] = useState(engineData[0].id);
 
+  // Preload all massive engine images into browser cache for instant switching
+  React.useEffect(() => {
+    engineData.forEach((engine) => {
+      const img = new Image();
+      img.src = engine.image;
+    });
+  }, []);
+
   const activeData = engineData.find(e => e.id === activeLayout);
 
   return (
