@@ -1,5 +1,5 @@
 /**
  * Core API Configuration
- * Directs all frontend requests directly to the production backend
+ * Prefers the VITE_API_URL environment variable, falling back to the deployed Render backend
  */
-export const API_URL = "https://street-machine.onrender.com";
+export const API_URL = import.meta.env.VITE_API_URL || "https://street-machine.onrender.com";
