@@ -148,7 +148,7 @@ const VehicleDetails = () => {
             <div className="max-w-7xl mx-auto space-y-8">
                 {/* Hero Skeleton */}
                 <Skeleton className="w-full aspect-video md:h-[70vh]" variant="card" />
-                
+
                 {/* Header Skeleton */}
                 <div className="flex flex-col md:flex-row justify-between items-start gap-6">
                     <div className="space-y-4 w-full md:w-1/2">

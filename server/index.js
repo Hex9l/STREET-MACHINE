@@ -59,3 +59,4 @@ DBconnect().then(() => {
     console.error("Failed to connect to DB", err);
     process.exit(1);
 });
+// Server restart trigger

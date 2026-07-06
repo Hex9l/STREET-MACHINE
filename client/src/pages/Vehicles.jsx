@@ -406,7 +406,7 @@ const Vehicles = ({ type = 'all' }) => {
                                                 {activeCat.name}
                                             </h2>
                                         </div>
-                                        
+
                                         {/* Ultra-Condensed Stats Row - Enlarged Text */}
                                         <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4 mb-3">
                                             {[
@@ -563,7 +563,7 @@ const Vehicles = ({ type = 'all' }) => {
 
                             {/* Pagination Controls */}
                             {totalPages > 1 && (
-                                <motion.div 
+                                <motion.div
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-10 md:gap-16 mt-16 md:mt-24 border-t border-white/5 pt-10 pb-16"
@@ -571,19 +571,18 @@ const Vehicles = ({ type = 'all' }) => {
                                     <button
                                         onClick={() => paginate(currentPage - 1)}
                                         disabled={currentPage === 1}
-                                        className={`group relative flex items-center gap-3 px-6 sm:px-8 py-3 sm:py-4 border rounded-lg text-[10px] sm:text-xs font-black uppercase tracking-[0.2em] transition-all duration-200 ${
-                                            currentPage === 1 
-                                            ? 'border-white/5 opacity-20 cursor-not-allowed text-gray-600' 
-                                            : 'border-white/10 text-gray-400 hover:border-[#ef4444]/50 hover:text-white hover:bg-[#ef4444]/5 shadow-xl hover:shadow-[#ef4444]/10'
-                                        }`}
+                                        className={`group relative flex items-center gap-3 px-6 sm:px-8 py-3 sm:py-4 border rounded-lg text-[10px] sm:text-xs font-black uppercase tracking-[0.2em] transition-all duration-200 ${currentPage === 1
+                                                ? 'border-white/5 opacity-20 cursor-not-allowed text-gray-600'
+                                                : 'border-white/10 text-gray-400 hover:border-[#ef4444]/50 hover:text-white hover:bg-[#ef4444]/5 shadow-xl hover:shadow-[#ef4444]/10'
+                                            }`}
                                     >
-                                        <ArrowLeft className={`w-4 h-4 transition-transform duration-200 ${currentPage !== 1 && 'group-hover:-translate-x-1'}`} /> 
+                                        <ArrowLeft className={`w-4 h-4 transition-transform duration-200 ${currentPage !== 1 && 'group-hover:-translate-x-1'}`} />
                                         <span>Previous</span>
                                         {currentPage !== 1 && (
                                             <div className="absolute inset-x-0 bottom-0 h-[1px] bg-gradient-to-r from-transparent via-[#ef4444] to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-200" />
                                         )}
                                     </button>
-                                    
+
                                     <div className="flex flex-col items-center gap-2">
                                         <span className="text-gray-600 font-black text-[8px] sm:text-[10px] uppercase tracking-[0.4em] mb-1">Navigation Matrix</span>
                                         <div className="relative group/indicator">
@@ -599,11 +598,10 @@ const Vehicles = ({ type = 'all' }) => {
                                     <button
                                         onClick={() => paginate(currentPage + 1)}
                                         disabled={currentPage === totalPages}
-                                        className={`group relative flex items-center gap-3 px-6 sm:px-8 py-3 sm:py-4 border rounded-lg text-[10px] sm:text-xs font-black uppercase tracking-[0.2em] transition-all duration-200 ${
-                                            currentPage === totalPages 
-                                            ? 'border-white/5 opacity-20 cursor-not-allowed text-gray-600' 
-                                            : 'border-white/10 text-gray-400 hover:border-[#ef4444]/50 hover:text-white hover:bg-[#ef4444]/5 shadow-xl hover:shadow-[#ef4444]/10'
-                                        }`}
+                                        className={`group relative flex items-center gap-3 px-6 sm:px-8 py-3 sm:py-4 border rounded-lg text-[10px] sm:text-xs font-black uppercase tracking-[0.2em] transition-all duration-200 ${currentPage === totalPages
+                                                ? 'border-white/5 opacity-20 cursor-not-allowed text-gray-600'
+                                                : 'border-white/10 text-gray-400 hover:border-[#ef4444]/50 hover:text-white hover:bg-[#ef4444]/5 shadow-xl hover:shadow-[#ef4444]/10'
+                                            }`}
                                     >
                                         <span>Next</span>
                                         <ArrowLeft className={`w-4 h-4 rotate-180 transition-transform duration-200 ${currentPage !== totalPages && 'group-hover:translate-x-1'}`} />
